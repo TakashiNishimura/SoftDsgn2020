@@ -1,0 +1,10 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<p>むげんるいごGen</p>
+<p><span th:text="${tango}"></span>の類語は</span></p>
+  <input type="hidden" name="tango"/>
+  <ul th:each="r : ${ruigo}">
+  <li><a th:href="@{'http://localhost:8080/ruigo/'+${r}}"><span th:text="${r}"></span></a></li>
+</ul>
+</body>
+</html>
